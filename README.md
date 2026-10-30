@@ -4,13 +4,9 @@ Healthcare appointment analysis using Python, SQL and Power BI DAX: no-shows, bo
 
 **Level:** Entry–intermediate · **Period:** 2025 · **Tools:** Python, pandas, Matplotlib, SQLite, Power BI DAX, HTML/CSS/JavaScript
 
-> This is a synthetic educational case study. It does not contain real patient records or demonstrate real-world business impact.
-
 ## Dashboard preview
 
 ![Healthcare Appointment Operations dashboard](reports/dashboard_preview.png)
-
-The preview is a **1600 × 900 PNG** generated from the CSV data. It is a static analytical preview, not a Power BI export or browser screenshot. Download the repository and open [dashboard/index.html](dashboard/index.html) for the offline interactive version. GitHub's file viewer displays HTML source.
 
 ## Business question
 
@@ -124,7 +120,3 @@ All records are generated for education. Apparent relationships partly reflect e
 ## License
 
 [MIT](LICENSE)
-
-### Dashboard design
-
-Forest green and sage palette, compact report header, KPI strip, wide monthly activity area chart and a tall department wait panel. Both the static preview and interactive HTML use a single-page desktop layout. The PNG preview is 1600 × 900.
