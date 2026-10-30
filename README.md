@@ -8,7 +8,7 @@ Healthcare appointment analysis using Python, SQL and Power BI DAX: no-shows, bo
 
 ## Dashboard preview
 
-![Healthcare Appointment Operations dashboard](dashboard/Healthcare Dashboard.png)
+![Healthcare Appointment Operations dashboard](reports/dashboard_preview.png)
 
 The preview is a **1600 × 900 PNG** generated from the CSV data. It is a static analytical preview, not a Power BI export or browser screenshot. Download the repository and open [dashboard/index.html](dashboard/index.html) for the offline interactive version. GitHub's file viewer displays HTML source.
 

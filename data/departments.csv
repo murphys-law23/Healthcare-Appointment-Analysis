@@ -1,0 +1,7 @@
+department_id,department,wait_target_minutes
+D01,General Medicine,30
+D02,Cardiology,30
+D03,Dermatology,30
+D04,Orthopedics,30
+D05,Ophthalmology,30
+D06,Pediatrics,30

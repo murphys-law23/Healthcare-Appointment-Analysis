@@ -1,0 +1,2 @@
+PASS: input validity, key uniqueness, foreign keys, annual KPI reconciliation, 12 monthly reconciliations and six department reconciliations.
+SQL engine: SQLite. Power BI Desktop has not been executed.

@@ -1,0 +1,12 @@
+{
+  "name": "Forest and Sage Healthcare",
+  "dataColors": [
+    "#376b50",
+    "#a9be92",
+    "#ce9559",
+    "#203f30"
+  ],
+  "background": "#eef2ec",
+  "foreground": "#203a30",
+  "tableAccent": "#087F8C"
+}

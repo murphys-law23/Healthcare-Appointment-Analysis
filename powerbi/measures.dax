@@ -1,0 +1,11 @@
+// Create each measure separately in Power BI Desktop.
+Appointments = COUNTROWS(appointments)
+Attended = CALCULATE(COUNTROWS(appointments), appointments[status] = "Attended")
+No Shows = CALCULATE(COUNTROWS(appointments), appointments[status] = "No-show")
+Cancelled = CALCULATE(COUNTROWS(appointments), appointments[status] = "Cancelled")
+Eligible Appointments = [Attended] + [No Shows]
+No Show Rate = DIVIDE([No Shows], [Eligible Appointments])
+Average Wait Minutes = CALCULATE(AVERAGE(appointments[wait_minutes]), appointments[status] = "Attended")
+Within Target = COUNTROWS(FILTER(appointments, appointments[status] = "Attended" && NOT ISBLANK(appointments[wait_minutes]) && appointments[wait_minutes] <= RELATED(departments[wait_target_minutes])))
+Within Target Rate = DIVIDE([Within Target], [Attended])
+Cancellation Rate = DIVIDE([Cancelled], [Appointments])

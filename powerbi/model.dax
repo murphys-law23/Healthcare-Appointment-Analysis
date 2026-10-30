@@ -1,0 +1,7 @@
+// New calculated table. Mark as the date table using Calendar[Date].
+Calendar = ADDCOLUMNS(CALENDAR(DATE(2025,1,1),DATE(2025,12,31)), "Month", FORMAT([Date], "yyyy-MM"), "Month Number", MONTH([Date]), "Quarter", "Q" & ROUNDUP(MONTH([Date])/3,0))
+
+// New calculated columns on appointments, created individually.
+Lead Days = DATEDIFF(appointments[booking_date], appointments[appointment_date], DAY)
+Lead Band = SWITCH(TRUE(), appointments[Lead Days] <= 7, "0-7 days", appointments[Lead Days] <= 21, "8-21 days", "22+ days")
+Lead Band Order = SWITCH(TRUE(), appointments[Lead Days] <= 7, 1, appointments[Lead Days] <= 21, 2, 3)

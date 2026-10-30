@@ -1,0 +1,9 @@
+{
+  "bookings": 3600,
+  "attended": 2765,
+  "no_shows": 485,
+  "cancelled": 350,
+  "no_show_rate": 0.14923076923076922,
+  "avg_wait_minutes": 30.443037974683545,
+  "within_target_rate": 0.4994575045207957
+}
